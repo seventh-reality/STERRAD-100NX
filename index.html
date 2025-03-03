@@ -6,93 +6,102 @@
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
-     <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
     <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
   </head>
   <body>
     <div id="card">
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="sterad.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="loading.gif" shadow-intensity="0.88" shadow-softness="1" exposure="1">
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-        View in 4D
-    </button>
+      <!-- <model-viewer> HTML element -->
+      <model-viewer src="sterad.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="loading.gif" shadow-intensity="0.88" shadow-softness="1" exposure="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+          View in 4D
+        </button>
 
-       <div id="button" style = "display:flex; justify-content: space-between;">
-          <img src="4.png"  align="center" style="width:100px;  padding-left: 15px;padding-top: 0px;"/>
-	  <img src="iitname.png"  style="width:100px;  padding-right: 10px;padding-top: 0px;"/>    
-      </div>
-     
-      <div id="ar-prompt">
+        <div id="button" style="display: flex; justify-content: space-between;">
+          <img src="4.png" align="center" style="width:100px; padding-left: 15px; padding-top: 0px;" />
+          <img src="iitname.png" style="width:100px; padding-right: 10px; padding-top: 0px;" />    
+        </div>
+
+        <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
-      </div>
-    </model-viewer>
-     <section class="attributiontwo">
-       <p style="background-image: url('black.png')" style="width:60px;height:60px; padding-left: 0px;padding-top: 10px;">
-      
-      <span>
-        
-        <a href="https://pdf.medicalexpo.com/pdf/asp-advanced-sterilization-products/sterrad-system-allclear-technology-product-brochure/81394-251883.html"><img src="Brochure_1.png" id="youtube-icon" align="center" style="width:30px;height:40px; padding-left: 17px;padding-top: 0px;"></a>
-        <a href="https://www.youtube.com/watch?v=39HnBANsPyo"><img src="Video_1.png" id="youtube-icon" align="center" style="width:30px;height:40px; padding-left: 20px;padding-top: 0px; "></a>
-        <a href="https://www.asp.com/en-in/products/low-temperature-gas-plasma-sterilization/sterrad-100nx-allclear"><img src="web_1.png" id="youtube-icon" align="center" style="width:30px;height:40px; padding-left: 20px;padding-top: 0px; "></a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSew4D56CSKpONvc30Ay7cLUY6FnPCOs7zK9IPYRLQWQPswbsg/viewform?usp=sf_link"><img src="form_1.png" id="youtube-icon" align="center" style="width:30px;height:40px; padding-left: 20px;padding-top: 0px;"></a>
-        <a href="https://drive.google.com/file/d/1hFf5OK8XdV_q6UZ7WFcwiR3xrxWkUQ4Z/view?usp=sharing"><img src="analytics_1.png" id="youtube-icon" align="center" style="width:30px;height:40px; padding-left: 20px;padding-top: 0px;"></a>
-        <h5>CLICK ON THE ABOVE BUTTONS FOR MORE FEATURES</h5>
-      </span>
-         <style>
-       h5 {
-       text-align: center;
-       margin-top:-5px; 
-       font-size: 9px;
-       color: black; /* Optional: Set text color to improve visibility */
-       }
+        </div>
+      </model-viewer>
 
-       /* CSS updates for positioning and layout */
-       .attributiontwo {
-         
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;     
-         padding: 2px;        
-       }
+      <section class="attributiontwo">
+        <p style="background-image: url('black.png'); width: 60px; height: 60px; padding-left: 0px; padding-top: 10px;">
+          <span>
+            <a href="https://pdf.medicalexpo.com/pdf/asp-advanced-sterilization-products/sterrad-system-allclear-technology-product-brochure/81394-251883.html">
+              <img src="Brochure_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left: 17px;padding-top: 0px;">
+            </a>
+            <a href="https://www.youtube.com/watch?v=39HnBANsPyo">
+              <img src="Video_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left: 20px;padding-top: 0px;">
+            </a>
+            <a href="https://www.asp.com/en-in/products/low-temperature-gas-plasma-sterilization/sterrad-100nx-allclear">
+              <img src="web_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left: 20px;padding-top: 0px;">
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSew4D56CSKpONvc30Ay7cLUY6FnPCOs7zK9IPYRLQWQPswbsg/viewform?usp=sf_link">
+              <img src="form_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left: 20px;padding-top: 0px;">
+            </a>
+            <a href="https://drive.google.com/file/d/1hFf5OK8XdV_q6UZ7WFcwiR3xrxWkUQ4Z/view?usp=sharing">
+              <img src="analytics_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left: 20px;padding-top: 0px;">
+            </a>
+            <h5>CLICK ON THE ABOVE BUTTONS FOR MORE FEATURES</h5>
+          </span>
 
-       .attributiontwo span {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-wrap: wrap;
-       }
+          <style>
+            h5 {
+              text-align: center;
+              margin-top: -5px;
+              font-size: 9px;
+              color: black; /* Optional: Set text color to improve visibility */
+            }
 
-       .attributiontwo a {
-         margin: 5px;
-       }
+            /* CSS updates for positioning and layout */
+            .attributiontwo {
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 2px;
+            }
 
-       .attributiontwo img {
-         transition: transform 0.3s ease;
-       }
+            .attributiontwo span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+            }
 
-       .attributiontwo img:hover {
-         transform: scale(1.1); /* Optional: Add hover effect for images */
-       }
-          
-   </style>  
-   
-    </section>
-      
-  </div>
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X3923ST558"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            .attributiontwo a {
+              margin: 5px;
+            }
 
-  gtag('config', 'G-X3923ST558');
-</script>
+            .attributiontwo img {
+              transition: transform 0.3s ease;
+              width: 35px;  /* Increased size */
+              height: 45px; /* Increased size */
+            }
+
+            .attributiontwo img:hover {
+              transform: scale(1.1); /* Optional: Add hover effect for images */
+            }
+          </style>
+        </p>
+      </section>
+
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3923ST558"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-X3923ST558');
+    </script>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
