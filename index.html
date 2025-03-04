@@ -32,56 +32,22 @@
         <p style="background-image: url('black.png'); width: 60px; height: 60px; padding-left: 0px; padding-top: 10px;">
           <span>
             <a href="https://pdf.medicalexpo.com/pdf/asp-advanced-sterilization-products/sterrad-system-allclear-technology-product-brochure/81394-251883.html">
-              <img src="Brochure_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left:0px;padding-top: 0px;">
+              <img src="Brochure_1.png" id="youtube-icon" class="icon" />
             </a>
             <a href="https://www.youtube.com/watch?v=39HnBANsPyo">
-              <img src="Video_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left: 0px;padding-top: 0px;">
+              <img src="Video_1.png" id="youtube-icon" class="icon" />
             </a>
             <a href="https://www.asp.com/en-in/products/low-temperature-gas-plasma-sterilization/sterrad-100nx-allclear">
-              <img src="web_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left: 0px;padding-top: 0px;">
+              <img src="web_1.png" id="youtube-icon" class="icon" />
             </a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSew4D56CSKpONvc30Ay7cLUY6FnPCOs7zK9IPYRLQWQPswbsg/viewform?usp=sf_link">
-              <img src="form_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left: 0px;padding-top: 0px;">
+              <img src="form_1.png" id="youtube-icon" class="icon" />
             </a>
             <a href="https://drive.google.com/file/d/1hFf5OK8XdV_q6UZ7WFcwiR3xrxWkUQ4Z/view?usp=sharing">
-              <img src="analytics_1.png" id="youtube-icon" align="center" style="width:35px;height:45px;padding-left:0px;padding-top: 0px;">
+              <img src="analytics_1.png" id="youtube-icon" class="icon" />
             </a>
             <h5>CLICK ON THE ABOVE BUTTONS FOR MORE FEATURES</h5>
           </span>
-          <style>
-            h5 {
-              text-align: center;
-              margin-top: -5px;
-              font-size: 9px;
-              color: black; /* Optional: Set text color to improve visibility */
-            }
-            /* CSS updates for positioning and layout */
-            .attributiontwo {
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              padding: 2px;
-            }
-            .attributiontwo span {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-wrap: wrap;
-            }
-            .attributiontwo a {
-              margin: 5px;
-            }
-
-            .attributiontwo img {
-              transition: transform 0.3s ease;
-              width: 35px;  /* Increased size */
-              height: 45px; /* Increased size */
-            }
-
-            .attributiontwo img:hover {
-              transform: scale(1.1); /* Optional: Add hover effect for images */
-            }
-          </style>
         </p>
       </section>
     </div>
@@ -99,3 +65,61 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   </body>
 </html>
+
+<!-- Updated CSS -->
+<style>
+  h5 {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 9px;
+    color: black; /* Optional: Set text color to improve visibility */
+  }
+
+  .attributiontwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .attributiontwo span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .attributiontwo a {
+    margin: 8px;
+  }
+
+  .icon {
+    width: 35px;
+    height: 45px;
+    transition: transform 0.3s ease;
+  }
+
+  .icon:hover {
+    transform: scale(1.1); /* Optional: Add hover effect for images */
+  }
+
+  .attributiontwo img {
+    width: 35px;  /* Increased size */
+    height: 45px; /* Increased size */
+  }
+
+  .attributiontwo a {
+    text-decoration: none; /* Remove underline from links */
+  }
+
+  /* Add responsive styling for mobile */
+  @media (max-width: 600px) {
+    .attributiontwo {
+      padding: 15px;
+    }
+    .icon {
+      width: 30px;
+      height: 40px;
+    }
+  }
+</style>
